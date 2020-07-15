@@ -1,5 +1,13 @@
+// Create an inteface for our class
+interface UserInterface {
+    name: string;
+    email: string;
+    age: number;
+    register();
+    payInvoice();
+}
 // create a class, very much like java!
-class User {
+class User implements UserInterface {
     name: string;
     email: string;
     age: number;
