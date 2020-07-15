@@ -15,6 +15,10 @@ var mySum = function (num1, num2) {
 console.log(mySum('3', 5));
 console.log(getSum(1, 4));
 function getName(firstName, lastName) {
+    if (lastName == undefined) {
+        return firstName;
+    }
     return firstName + '' + lastName;
 }
-console.log(getName);
+console.log(getName('John', 'Doe'));
+console.log(getName('John'));
